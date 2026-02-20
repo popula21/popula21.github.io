@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Gurus</title>
+    <meta
+      name="description"
+      content="Sudoku Gurus is a clean and elegant Sudoku experience with multiple difficulty levels, hints, and smooth gameplay."
+    />
+    <style>
+      :root {
+        --bg: #f4efe3;
+        --card: #fff8ea;
+        --text: #3f3228;
+        --muted: #6c5d50;
+        --accent: #b9864a;
+        --border: #ceb89a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #f8f3e7 0%, var(--bg) 100%);
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 16px 48px;
+      }
+      .hero {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px;
+        box-shadow: 0 8px 22px rgba(63, 50, 40, 0.1);
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: #5a452f;
+      }
+      p {
+        line-height: 1.6;
+        margin: 12px 0;
+      }
+      .muted { color: var(--muted); }
+      .cta {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      a.btn {
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 10px 14px;
+        border: 1px solid transparent;
+        font-weight: 600;
+      }
+      .btn.primary {
+        background: var(--accent);
+        color: #fff8ef;
+        border-color: #93663b;
+      }
+      .btn.secondary {
+        background: #efe1cb;
+        color: #4c3a29;
+        border-color: #ceb089;
+      }
+      .grid {
+        margin-top: 18px;
+        display: grid;
+        gap: 10px;
+      }
+      .item {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 12px;
+        background: #fffdf6;
+      }
+      footer {
+        margin-top: 16px;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Sudoku Gurus</h1>
+        <p class="muted">
+          Train your logic with a polished Sudoku experience designed for quick daily play or long challenge sessions.
+        </p>
+
+        <div class="grid">
+          <div class="item"><strong>Three levels:</strong> Easy, Medium, and Hard.</div>
+          <div class="item"><strong>Helpful tools:</strong> Notes mode, hints, and mistake tracking.</div>
+          <div class="item"><strong>Progression:</strong> Unlock harder levels by wins or rewarded ads.</div>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="https://apps.apple.com/app/id6745113237">View on App Store</a>
+          <a class="btn secondary" href="https://popula21.github.io/sudoku-support/">Support</a>
+          <a class="btn secondary" href="https://popula21.github.io/sudoku-support/privacy.html">Privacy Policy</a>
+        </div>
+
+        <footer>© 2026 Sudoku Gurus</footer>
+      </section>
+    </main>
+  </body>
+</html>
